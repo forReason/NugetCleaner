@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using System.Xml.Linq;
 
 namespace NugetCleaner
 {
@@ -53,11 +52,11 @@ namespace NugetCleaner
         public bool MoveToSubdirs { get; set; } = true;
 
         public string VersionRevision_Doc { get; set; } =
-            "Defines the extent to which the software should clean" + Environment.NewLine +
-            "Possible values:" + Environment.NewLine +
-            "- major: only keep the highest full versions, eg 1.3.3; 2.0.1; 3.0.0" + Environment.NewLine +
-            "- minor: keep each highest minor, eg 0.0.0; 0.1.3; 0.2.2" + Environment.NewLine +
-            "- build: keep each revision, eg 0.0.0.0; 0.0.1.23; 0.0.2.33";
+            "Defines the extent to which the software should clean. " +
+            "Possible values:"  +
+            "major: keep highest full versions, eg 1.3; 2.0; 3.0 " +
+            "minor: keep highest minor, eg 0.0.0; 0.1.3; 0.2.2 " +
+            "build: keep each revision, eg 0.0.0.0; 0.0.1.23; 0.0.2.33";
         /// <summary>
         /// Defines the extent to which the software should clean
         /// </summary>
